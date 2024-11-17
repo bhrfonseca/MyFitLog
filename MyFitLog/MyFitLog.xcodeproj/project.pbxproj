@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E02CDAC2CE900A600DBF752 /* ActivityDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E02CDAB2CE900A600DBF752 /* ActivityDTO.swift */; };
+		6E02CDAE2CE91CB300DBF752 /* DataFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E02CDAD2CE91CB300DBF752 /* DataFormatter.swift */; };
+		6EC4AE8A2CEA716F00DFF927 /* MyFitLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC4AE892CEA716F00DFF927 /* MyFitLogTests.swift */; };
+		6EE043FD2CE66DB6008BEAEE /* MyFitLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE043FC2CE66DB6008BEAEE /* MyFitLogApp.swift */; };
+		6EE044012CE66DB8008BEAEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EE044002CE66DB8008BEAEE /* Assets.xcassets */; };
+		6EE044042CE66DB8008BEAEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EE044032CE66DB8008BEAEE /* Preview Assets.xcassets */; };
+		6EE0440B2CE66DF0008BEAEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EE0440A2CE66DF0008BEAEE /* GoogleService-Info.plist */; };
+		6EE0440E2CE66F1D008BEAEE /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6EE0440D2CE66F1D008BEAEE /* FirebaseAnalytics */; };
+		6EE044102CE66F1D008BEAEE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6EE0440F2CE66F1D008BEAEE /* FirebaseAuth */; };
+		6EE044122CE66F1D008BEAEE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6EE044112CE66F1D008BEAEE /* FirebaseFirestore */; };
+		6EE044142CE66F1D008BEAEE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6EE044132CE66F1D008BEAEE /* FirebaseStorage */; };
+		6EE044162CE672BF008BEAEE /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE044152CE672BF008BEAEE /* mainView.swift */; };
+		6EE044182CE6730C008BEAEE /* createActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE044172CE6730C008BEAEE /* createActivityView.swift */; };
+		6EE0441A2CE67339008BEAEE /* listActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE044192CE67339008BEAEE /* listActivityView.swift */; };
+		6EE0441C2CE67396008BEAEE /* manageActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE0441B2CE67396008BEAEE /* manageActivityView.swift */; };
+		6EE044212CE67791008BEAEE /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE044202CE67791008BEAEE /* Activity.swift */; };
+		6EE044232CE67F7E008BEAEE /* databaseFirestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE044222CE67F7E008BEAEE /* databaseFirestore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EC4AE8B2CEA716F00DFF927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EE043F12CE66DB6008BEAEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EE043F82CE66DB6008BEAEE;
+			remoteInfo = MyFitLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E02CDAB2CE900A600DBF752 /* ActivityDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDTO.swift; sourceTree = "<group>"; };
+		6E02CDAD2CE91CB300DBF752 /* DataFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFormatter.swift; sourceTree = "<group>"; };
+		6EC4AE872CEA716F00DFF927 /* MyFitLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFitLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EC4AE892CEA716F00DFF927 /* MyFitLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFitLogTests.swift; sourceTree = "<group>"; };
+		6EE043F92CE66DB6008BEAEE /* MyFitLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFitLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE043FC2CE66DB6008BEAEE /* MyFitLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFitLogApp.swift; sourceTree = "<group>"; };
+		6EE044002CE66DB8008BEAEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6EE044032CE66DB8008BEAEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6EE0440A2CE66DF0008BEAEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6EE044152CE672BF008BEAEE /* mainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainView.swift; sourceTree = "<group>"; };
+		6EE044172CE6730C008BEAEE /* createActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createActivityView.swift; sourceTree = "<group>"; };
+		6EE044192CE67339008BEAEE /* listActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listActivityView.swift; sourceTree = "<group>"; };
+		6EE0441B2CE67396008BEAEE /* manageActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = manageActivityView.swift; sourceTree = "<group>"; };
+		6EE044202CE67791008BEAEE /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		6EE044222CE67F7E008BEAEE /* databaseFirestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = databaseFirestore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EC4AE842CEA716F00DFF927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE043F62CE66DB6008BEAEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE0440E2CE66F1D008BEAEE /* FirebaseAnalytics in Frameworks */,
+				6EE044142CE66F1D008BEAEE /* FirebaseStorage in Frameworks */,
+				6EE044102CE66F1D008BEAEE /* FirebaseAuth in Frameworks */,
+				6EE044122CE66F1D008BEAEE /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EC4AE882CEA716F00DFF927 /* MyFitLogTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EC4AE892CEA716F00DFF927 /* MyFitLogTests.swift */,
+			);
+			path = MyFitLogTests;
+			sourceTree = "<group>";
+		};
+		6EE043F02CE66DB6008BEAEE = {
+			isa = PBXGroup;
+			children = (
+				6EE043FB2CE66DB6008BEAEE /* MyFitLog */,
+				6EC4AE882CEA716F00DFF927 /* MyFitLogTests */,
+				6EE043FA2CE66DB6008BEAEE /* Products */,
+				9F0AA6AB4765E3D631F64314 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6EE043FA2CE66DB6008BEAEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EE043F92CE66DB6008BEAEE /* MyFitLog.app */,
+				6EC4AE872CEA716F00DFF927 /* MyFitLogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EE043FB2CE66DB6008BEAEE /* MyFitLog */ = {
+			isa = PBXGroup;
+			children = (
+				6EE043FC2CE66DB6008BEAEE /* MyFitLogApp.swift */,
+				6EE0441F2CE675C3008BEAEE /* Control */,
+				6EE0441E2CE675AA008BEAEE /* View */,
+				6EE0441D2CE6759C008BEAEE /* Model */,
+				6EE044002CE66DB8008BEAEE /* Assets.xcassets */,
+				6EE044022CE66DB8008BEAEE /* Preview Content */,
+			);
+			path = MyFitLog;
+			sourceTree = "<group>";
+		};
+		6EE044022CE66DB8008BEAEE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6EE044032CE66DB8008BEAEE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6EE0441D2CE6759C008BEAEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6EE044202CE67791008BEAEE /* Activity.swift */,
+				6E02CDAB2CE900A600DBF752 /* ActivityDTO.swift */,
+				6E02CDAD2CE91CB300DBF752 /* DataFormatter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6EE0441E2CE675AA008BEAEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6EE044152CE672BF008BEAEE /* mainView.swift */,
+				6EE044172CE6730C008BEAEE /* createActivityView.swift */,
+				6EE044192CE67339008BEAEE /* listActivityView.swift */,
+				6EE0441B2CE67396008BEAEE /* manageActivityView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6EE0441F2CE675C3008BEAEE /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				6EE0440A2CE66DF0008BEAEE /* GoogleService-Info.plist */,
+				6EE044222CE67F7E008BEAEE /* databaseFirestore.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		9F0AA6AB4765E3D631F64314 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EC4AE862CEA716F00DFF927 /* MyFitLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EC4AE8F2CEA716F00DFF927 /* Build configuration list for PBXNativeTarget "MyFitLogTests" */;
+			buildPhases = (
+				6EC4AE832CEA716F00DFF927 /* Sources */,
+				6EC4AE842CEA716F00DFF927 /* Frameworks */,
+				6EC4AE852CEA716F00DFF927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EC4AE8C2CEA716F00DFF927 /* PBXTargetDependency */,
+			);
+			name = MyFitLogTests;
+			productName = MyFitLogTests;
+			productReference = 6EC4AE872CEA716F00DFF927 /* MyFitLogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6EE043F82CE66DB6008BEAEE /* MyFitLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EE044072CE66DB8008BEAEE /* Build configuration list for PBXNativeTarget "MyFitLog" */;
+			buildPhases = (
+				6EE043F52CE66DB6008BEAEE /* Sources */,
+				6EE043F62CE66DB6008BEAEE /* Frameworks */,
+				6EE043F72CE66DB6008BEAEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFitLog;
+			packageProductDependencies = (
+				6EE0440D2CE66F1D008BEAEE /* FirebaseAnalytics */,
+				6EE0440F2CE66F1D008BEAEE /* FirebaseAuth */,
+				6EE044112CE66F1D008BEAEE /* FirebaseFirestore */,
+				6EE044132CE66F1D008BEAEE /* FirebaseStorage */,
+			);
+			productName = MyFitLog;
+			productReference = 6EE043F92CE66DB6008BEAEE /* MyFitLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EE043F12CE66DB6008BEAEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6EC4AE862CEA716F00DFF927 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 6EE043F82CE66DB6008BEAEE;
+					};
+					6EE043F82CE66DB6008BEAEE = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 6EE043F42CE66DB6008BEAEE /* Build configuration list for PBXProject "MyFitLog" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EE043F02CE66DB6008BEAEE;
+			packageReferences = (
+				6EE0440C2CE66F1D008BEAEE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 6EE043FA2CE66DB6008BEAEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EE043F82CE66DB6008BEAEE /* MyFitLog */,
+				6EC4AE862CEA716F00DFF927 /* MyFitLogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EC4AE852CEA716F00DFF927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE043F72CE66DB6008BEAEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE044042CE66DB8008BEAEE /* Preview Assets.xcassets in Resources */,
+				6EE044012CE66DB8008BEAEE /* Assets.xcassets in Resources */,
+				6EE0440B2CE66DF0008BEAEE /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EC4AE832CEA716F00DFF927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC4AE8A2CEA716F00DFF927 /* MyFitLogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE043F52CE66DB6008BEAEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE044162CE672BF008BEAEE /* mainView.swift in Sources */,
+				6EE044232CE67F7E008BEAEE /* databaseFirestore.swift in Sources */,
+				6EE044212CE67791008BEAEE /* Activity.swift in Sources */,
+				6E02CDAC2CE900A600DBF752 /* ActivityDTO.swift in Sources */,
+				6EE0441A2CE67339008BEAEE /* listActivityView.swift in Sources */,
+				6E02CDAE2CE91CB300DBF752 /* DataFormatter.swift in Sources */,
+				6EE0441C2CE67396008BEAEE /* manageActivityView.swift in Sources */,
+				6EE044182CE6730C008BEAEE /* createActivityView.swift in Sources */,
+				6EE043FD2CE66DB6008BEAEE /* MyFitLogApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EC4AE8C2CEA716F00DFF927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EE043F82CE66DB6008BEAEE /* MyFitLog */;
+			targetProxy = 6EC4AE8B2CEA716F00DFF927 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6EC4AE8D2CEA716F00DFF927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.pucpr.MyFitLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFitLog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyFitLog";
+			};
+			name = Debug;
+		};
+		6EC4AE8E2CEA716F00DFF927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.pucpr.MyFitLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFitLog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyFitLog";
+			};
+			name = Release;
+		};
+		6EE044052CE66DB8008BEAEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6EE044062CE66DB8008BEAEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EE044082CE66DB8008BEAEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyFitLog/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.pucpr.MyFitLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EE044092CE66DB8008BEAEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyFitLog/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.pucpr.MyFitLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EC4AE8F2CEA716F00DFF927 /* Build configuration list for PBXNativeTarget "MyFitLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EC4AE8D2CEA716F00DFF927 /* Debug */,
+				6EC4AE8E2CEA716F00DFF927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EE043F42CE66DB6008BEAEE /* Build configuration list for PBXProject "MyFitLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE044052CE66DB8008BEAEE /* Debug */,
+				6EE044062CE66DB8008BEAEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EE044072CE66DB8008BEAEE /* Build configuration list for PBXNativeTarget "MyFitLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE044082CE66DB8008BEAEE /* Debug */,
+				6EE044092CE66DB8008BEAEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6EE0440C2CE66F1D008BEAEE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6EE0440D2CE66F1D008BEAEE /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6EE0440C2CE66F1D008BEAEE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		6EE0440F2CE66F1D008BEAEE /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6EE0440C2CE66F1D008BEAEE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6EE044112CE66F1D008BEAEE /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6EE0440C2CE66F1D008BEAEE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6EE044132CE66F1D008BEAEE /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6EE0440C2CE66F1D008BEAEE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6EE043F12CE66DB6008BEAEE /* Project object */;
+}
